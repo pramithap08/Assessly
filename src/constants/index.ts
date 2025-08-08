@@ -76,9 +76,9 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
       },
     ],
     starterCode: {
-      cpp: `vector<int> twoSum(vector<int>& nums, int target) {
-    // Write your solution here
-    return {};
+      javascript: `function twoSum(nums, target) {
+  // Write your solution here
+  
 }`,
       python: `def two_sum(nums, target):
     # Write your solution here
@@ -91,9 +91,9 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
 }`,
     },
     constraints: [
-      "2 ≤ nums.length ≤ 10⁴",
-      "-10⁹ ≤ nums[i] ≤ 10⁹",
-      "-10⁹ ≤ target ≤ 10⁹",
+      "2 ≤ nums.length ≤ 104",
+      "-109 ≤ nums[i] ≤ 109",
+      "-109 ≤ target ≤ 109",
       "Only one valid answer exists.",
     ],
   },
@@ -113,8 +113,9 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
       },
     ],
     starterCode: {
-      cpp: `void reverseString(vector<char>& s) {
-    // Write your solution here
+      javascript: `function reverseString(s) {
+  // Write your solution here
+  
 }`,
       python: `def reverse_string(s):
     # Write your solution here
@@ -141,13 +142,14 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
       {
         input: "x = -121",
         output: "false",
-        explanation: "From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.",
+        explanation:
+          "From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.",
       },
     ],
     starterCode: {
-      cpp: `bool isPalindrome(int x) {
-    // Write your solution here
-    return false;
+      javascript: `function isPalindrome(x) {
+  // Write your solution here
+  
 }`,
       python: `def is_palindrome(x):
     # Write your solution here
@@ -162,13 +164,11 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
   },
 ];
 
-
 export const LANGUAGES = [
-  { id: "cpp", name: "C++", icon: "/cpp.jpg" },
+  { id: "javascript", name: "JavaScript", icon: "/javascript.png" },
   { id: "python", name: "Python", icon: "/python.png" },
   { id: "java", name: "Java", icon: "/java.png" },
 ] as const;
-
 
 export interface CodeQuestion {
   id: string;
@@ -180,7 +180,7 @@ export interface CodeQuestion {
     explanation?: string;
   }>;
   starterCode: {
-    cpp: string;
+    javascript: string;
     python: string;
     java: string;
   };
