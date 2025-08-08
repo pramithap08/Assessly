@@ -10,7 +10,7 @@ function DashboardBtn (){
   if (isCandidate || isLoading) return null;
   return (
     <Link href={"/dashboard"}>
-      <Button className="gap-2 font-medium bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+      <Button className="gap-2 font-medium bg-gradient-to-r from-indigo-600 to-blue-500 text-white px-4 py-2 rounded hover:from-indigo-700 hover:to-blue-600"
         size="sm">
         <SparklesIcon className="size-4" />
         Dashboard

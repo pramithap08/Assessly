@@ -40,7 +40,7 @@ export default function Home() {
     <div className="container max-w-7xl mx-auto p-6">
       {/* WELCOME SECTION */}
       <div className="rounded-lg bg-card p-6 border shadow-sm mb-10">
-        <h1 className="text-4xl font-bold bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
           Welcome back!
         </h1>
         <p className="text-muted-foreground mt-2">
@@ -72,8 +72,8 @@ export default function Home() {
       ) : (
         <>
           <div>
-            <h1 className="text-3xl font-bold">Your Interviews</h1>
-            <p className="text-muted-foreground mt-1">View and join your scheduled interviews</p>
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">Your Interviews</h1>
+            <p className="text-muted-foreground mt-1 text-indigo-600 ">View and join your scheduled interviews</p>
           </div>
 
           <div className="mt-8">
