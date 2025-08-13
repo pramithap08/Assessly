@@ -80,9 +80,13 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
   // Write your solution here
   
 }`,
-      python: `def two_sum(nums, target):
-    # Write your solution here
-    pass`,
+      cpp: `#include <vector>
+using namespace std;
+
+vector<int> twoSum(vector<int>& nums, int target) {
+    // Write your solution here
+    
+}`,
       java: `class Solution {
     public int[] twoSum(int[] nums, int target) {
         // Write your solution here
@@ -91,9 +95,9 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
 }`,
     },
     constraints: [
-      "2 ≤ nums.length ≤ 104",
-      "-109 ≤ nums[i] ≤ 109",
-      "-109 ≤ target ≤ 109",
+      "2 ≤ nums.length ≤ 10^4",
+      "-10^9 ≤ nums[i] ≤ 10^9",
+      "-10^9 ≤ target ≤ 10^9",
       "Only one valid answer exists.",
     ],
   },
@@ -117,9 +121,13 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
   // Write your solution here
   
 }`,
-      python: `def reverse_string(s):
-    # Write your solution here
-    pass`,
+      cpp: `#include <vector>
+using namespace std;
+
+void reverseString(vector<char>& s) {
+    // Write your solution here
+    
+}`,
       java: `class Solution {
     public void reverseString(char[] s) {
         // Write your solution here
@@ -151,9 +159,10 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
   // Write your solution here
   
 }`,
-      python: `def is_palindrome(x):
-    # Write your solution here
-    pass`,
+      cpp: `bool isPalindrome(int x) {
+    // Write your solution here
+    
+}`,
       java: `class Solution {
     public boolean isPalindrome(int x) {
         // Write your solution here
@@ -166,7 +175,7 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
 
 export const LANGUAGES = [
   { id: "javascript", name: "JavaScript", icon: "/javascript.png" },
-  { id: "python", name: "Python", icon: "/python.png" },
+  { id: "cpp", name: "C++", icon: "/cpp.png" },
   { id: "java", name: "Java", icon: "/java.png" },
 ] as const;
 
@@ -181,7 +190,7 @@ export interface CodeQuestion {
   }>;
   starterCode: {
     javascript: string;
-    python: string;
+    cpp: string;
     java: string;
   };
   constraints?: string[];
